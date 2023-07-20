@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&family=IM+Fell+English+SC&family=Josefin+Sans&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size:50px;
+    line-height: 64px;
+    color:#222;
+}
+
+h2{
+    
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+}
+h4{
+    font-size:20px;
+    color:#222;
+}
+
+h6{
+    font-weight: 700;
+    font-size:12px
+}
+
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+    padding:40px 80px;
+
+}
+.section-m1{
+    margin:40px;
+}
+button.normal{
+font-size: 13px;
+font-weight: 600;
+padding:15px 30px;
+color:#000000;
+background-color:#fff;
+border-radius: 4px;
+cursor: pointer;
+border: none;
+transition: 0.3s;
+} 
+button.white{
+font-size: 13px;
+font-weight: 600;
+padding:11px 18px;
+color:#fff;
+background-color:transparent;
+border-radius: 4px;
+cursor: pointer;
+border: 1px solid #fff;
+outline: none;
+transition: 0.3s;
+} 
+
+body{
+    width:100%;
+}
+/* .logo{
+    /* height: 160px;
+    width: 220px;
+     */
+
+/* header here */
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    z-index: 999;
+    background: #faeeee;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.4s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(158, 227, 158);
+    
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height: 3px;
+    background:rgb(158, 227, 158) ;
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+    
+}
+
+/* idhar Home page ke liye  */
+#heroine{
+    background-image:url("/img/heroimg2.png");
+    height:90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+#heroine h4{
+    padding-bottom: 15px;
+}
+#heroine h2{
+    color:rgb(233, 124, 124);
+}
+#heroine button.myButton {
+    color: rgb(233, 124, 124);
+    font-size: 15px;
+    line-height: 15px;
+    padding: 9px;
+    border-radius: 11px;
+    font-family: Poppins, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(254 217 144) 0%, rgb(224 187 126) 50%, rgb(250 205 44) 100%);
+    box-shadow: rgb(230 205 156) 5px 5px 15px 5px;
+    border: 1px solid rgb(151 110 43);
+    display: inline-block;
+}
+#heroine button:hover.myButton{
+        color: rgb(106, 201, 106);
+}
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#features .featurebox{
+    width:190px;
+    text-align: center;
+    padding: 20px 18px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.372);
+    border: 1px solid rgba(40, 38, 30, 0.05);
+    border-radius: 3px;
+    margin: 15px 0;    
+}
+#features .featurebox:hover{
+    box-shadow: 10px 10px 50px rgba(60, 0, 0, 0.372);
+}
+#features .featurebox img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#features .featurebox h6{
+    display:inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height:1;
+    border-radius:3px;
+    color:rgb(66, 151, 151);
+    background-color:pink;
+}
+#features .featurebox:nth-child(2) h6{
+    background-color:rgb(226, 192, 130);
+}
+#features .featurebox:nth-child(3) h6{
+    background-color:rgb(147, 241, 140);
+}
+#features .featurebox:nth-child(4) h6{
+    background-color:rgb(130, 176, 226);
+}
+#features .featurebox:nth-child(5) h6{
+    background-color:rgb(226, 149, 130);
+}
+
+#products1{
+    text-align:center;
+}
+
+#products1 .prod-container{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+
+#products1 .pros{
+    width:25%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 1px solid #bdebc4;
+    border-radius:35px; 
+    cursor: pointer;
+    box-shadow:20px 20px 30px rgba(21, 20, 20, 0.05);
+    transition:0.2s ease-in-out;
+    position: relative;
+}
+#products1 .pros img{
+    width: 100%;
+    border-radius:30px ;
+}
+#products1 .pros:hover {
+    box-shadow:20px 20px 30px rgba(50, 39, 39, 0.1)
+}
+
+#products1 .pros .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#products1 .pros .desc span{
+    color:rgba(93, 41, 41, 0.886);
+    font-size: 15px;
+}
+#products1 .pros .desc h5{
+    padding-top: 8px;
+    color:#222;
+    font-size: 14px;
+}
+#products1 .pros .desc i{
+    font-size:15px;
+    color:rgb(237, 229, 79);
+}
+#products1 .pros .desc h4{
+    padding-top: 8px;
+    font-size: 19px;
+    font-weight:700;
+    color:rgb(119, 227, 119);
+}
+.cart {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    font-weight: 500;
+    color:#465b52;
+    border: 1px solid beige;
+    position: absolute;
+    bottom:20px;
+    right:15px;
+}
+
+#banner{
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-image: url(/img/banner/b2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size:cover;
+    background-position: center;
+}
+ #banner h4{
+    color: #fff;
+    font-size: 18px;
+ }
+
+ #banner h4{
+    color: #fff;
+    font-size: 30px;
+    padding:10px 0;
+
+
+} 
+#banner h2{
+    margin-bottom:14px;
+    color:#e0c9c9;
+}
+#banner button:hover{
+    background-color: rgb(133, 219, 163);
+    color: #fff;
+}
+
+
+/* call to action */
+#sm-banner{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+
+}
+#sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+   background-color: #088178;
+   border: 1px solid #088178;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url("img/banner/b4.jpg"); 
+}
+#banner3 .banner-box3{
+    background-image: url("img/banner/b18.jpg"); 
+}
+
+
+#banner3 h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 22px;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat:no-repeat ;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 10px;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width:300px;
+        background-color: gray;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.2);
+        padding:80px 0 0 10px
+    }
+
+    #navbar li{
+        margin-bottom:25px;
+    }
+    
+}
+
+
+
+
+
+
+/* Responsive Breakpoint 2 */
+
+@media(max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+   #header{
+    padding: 10px 30px ;
+   }
+   h1{
+    font-size: 38px;
+   } 
+   h2{
+    font-size: 32px;
+   }
+   #hero{
+    padding: 0 20px;
+    background-position: 55%;
+   }
+   #feature{
+    justify-content: space-between;
+   }
+   #feature .fe-box{
+    width: 155px;
+    margin: 0 0 15px 0;
+   }
+   #product1 .pro{
+    width: 100%;
+   }
+   #banner{
+    height: 40vh;
+   }
+   #sm-banner .banner-box{
+    height: 40vh;
+   }
+   #sm-banner .banner-box2{
+    margin-top: 20px;
+   }
+   #banner3{
+    padding: 0 20px;
+   }
+   #banner3 .banner-box{
+    width: 100%;
+   }
+   #newsletter{
+    padding: 40px 20px;
+   }
+   #newsletter .form{
+    width: 100%;
+   }
+   footer .copyright{
+    text-align: start;
+   }
+}
+
